@@ -1,15 +1,19 @@
+import React from 'react';
 
-function DetailView()
-{
 
-    
+export default class DetailView extends React.Component {
+ 
+ 
+  render() {
+   
+
 
     return (
-     
-            <div>
-                <h1>One product View</h1>
-            </div>
+        
+          <h1>hi</h1>
+          
     )
+  }
 }
 
-export default DetailView;
+

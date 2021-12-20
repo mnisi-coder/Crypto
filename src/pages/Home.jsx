@@ -5,7 +5,7 @@ function Home()
 {
     return (
         
-        <><div class="bg-indigo-50 h-screen overflow-scroll">
+        <><div class=" bg-indigo-50 h-screen overflow-scroll">
             <Outlet></Outlet>
         </div>
         

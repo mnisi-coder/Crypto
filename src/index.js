@@ -19,7 +19,7 @@ export default function App() {
           <Route path="List" element={<List/>} />
           <Route path="About" element={<About/>} />
           <Route path="Footer" element={<Footer/>} />
-          <Route path="detailView" element={<DetailView/>} />
+          <Route path="detailView/:coin" render={() => <DetailView/>} />
         </Route>
       </Routes>
     </BrowserRouter>
