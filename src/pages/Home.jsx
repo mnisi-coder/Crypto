@@ -5,16 +5,18 @@ function Home()
 {
     return (
         
-        <><div class=" bg-indigo-50 h-screen overflow-scroll">
+        <>
+        <div className="flex flex-col h-screen justify-between">
+            <div className=" bg-indigo-50 flex-grow overflow-scroll">
             <Outlet></Outlet>
         </div>
         
-        <div class="absolute bottom-0 left-0 ">
+        <div className="absolute bottom-0 left-0 ">
        
         <Footer></Footer>
        
         </div>
-        
+        </div>
         
         </>
     )

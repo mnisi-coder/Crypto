@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div class="flex justify-center items-center h-20 w-screen grid-cols-3 gap-20 bg-white ">
-      <div class="cursor-pointer  hover:text-violet-400 ">
+    <div className="flex justify-center items-center h-20 w-screen grid-cols-3 sm:gap-20 gap-10 bg-white ">
+      <div className="cursor-pointer  hover:text-violet-400 ">
         <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
+            className="h-10 w-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -21,11 +21,11 @@ function Footer() {
           </svg>
         </Link>
       </div>
-      <div class="cursor-pointer hover:text-violet-400 ">
+      <div className="cursor-pointer hover:text-violet-400 ">
         <Link to="/List">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
+            className="h-10 w-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -40,11 +40,11 @@ function Footer() {
         </Link>
       </div>
 
-      <div class="cursor-pointer hover:text-violet-400 ">
-        <Link to="/About">
+      <div className="cursor-pointer hover:text-violet-400 ">
+        <Link to="/Calculator">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
+            className="h-10 w-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -59,11 +59,11 @@ function Footer() {
         </Link>
       </div>
 
-      <div class="cursor-pointer hover:text-violet-400 ">
+      <div className="cursor-pointer hover:text-violet-400 ">
         <Link to="/About">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
+            className="h-10 w-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

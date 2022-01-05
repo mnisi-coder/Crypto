@@ -5,7 +5,7 @@ import axios from "axios";
 import { Component } from "react";
 
 export default class List extends Component {
-  //List = [];
+
 
   constructor()
   {
@@ -43,28 +43,28 @@ export default class List extends Component {
       <>
         <SearchBar />
 
-        <ul class="flex flex-col bg-gray-100 p-4">
+        <ul className="flex flex-col bg-gray-100 p-4">
         {
             //this.List.map(item =>console.log(" index " +" " +item.name) )
            this.state.List.map((data,i) =>{
               
                
-              return (<Link to={`/detailView/${this.state.List[i].id}`}><li key={i} class="border-gray-400 flex flex-row mb-2">
-              <div class="select-none cursor-pointer bg-white rounded-md flex flex-1 items-center p-4  transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow">
+              return (<Link to={`/detailView/${this.state.List[i].id}`}><li key={i} className="border-gray-400 flex flex-row mb-2">
+              <div className="select-none cursor-pointer bg-white rounded-md flex flex-1 items-center p-4  transition duration-200 ease-in-out transform hover:-translate-y-1 hover:shadow">
                 <div>
                   <img
-                    class="h-10 w-10 object-cover object-center rounded-full"
+                    className="h-10 w-10 object-cover object-center rounded-full"
                     src={this.state.List[i].image}
                     alt=""
                   />
                 </div>
-                <div class="flex-1 pl-1 mr-16">
-                  <div class="font-medium">{this.state.List[i].name}</div>
-                  <div class="text-gray-600 text-sm">
+                <div className="flex-1 pl-1 mr-16">
+                  <div className="font-medium">{this.state.List[i].name}</div>
+                  <div className="text-gray-600 text-sm">
                     
                     <a
                       href="/"
-                      class="inline-block rounded-full text-white 
+                      className="inline-block rounded-full text-white 
                         bg-yellow-700
                         text-xs font-bold 
                         mr-1 md:mr-2 mb-2 px-2 md:px-4 py-1 "
@@ -74,7 +74,7 @@ export default class List extends Component {
                   </div>
                 </div>
                 
-                {this.state.List[i].market_cap_change_percentage_24h <0 ? <div class="text-red-500 ">{this.state.List[i].market_cap_change_percentage_24h}%</div> : <div class="text-green-500 ">↑{this.state.List[i].market_cap_change_percentage_24h}%</div>}
+                {this.state.List[i].market_cap_change_percentage_24h <0 ? <div className="text-red-500 ">{this.state.List[i].market_cap_change_percentage_24h}%</div> : <div className="text-green-500 ">↑{this.state.List[i].market_cap_change_percentage_24h}%</div>}
               </div>
             </li></Link>)
             })

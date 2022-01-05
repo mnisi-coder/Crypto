@@ -9,7 +9,7 @@ import About from './pages/About';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import DetailView from './pages/DetailView';
-
+import Calculator from './pages/Calculator';
 export default function App() {
   return (
     <BrowserRouter>
@@ -19,7 +19,8 @@ export default function App() {
           <Route path="List" element={<List/>} />
           <Route path="About" element={<About/>} />
           <Route path="Footer" element={<Footer/>} />
-          <Route path="detailView/:coin" render={() => <DetailView/>} />
+            <Route path="calculator" element={<Calculator/>} />
+          <Route path="detailView/:coin" element={<DetailView/>}  render={() => <DetailView/> } />
         </Route>
       </Routes>
     </BrowserRouter>
